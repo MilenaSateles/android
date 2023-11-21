@@ -13,6 +13,7 @@
     --cor3: #2fa866;
     --cor4: #1a5c37;
     --cor5: #063d1e;
+    --cor-bg: #e3f1ea;
     --fonte-padrao: Arial, Verdana, Helvetica, sans-serif;
     --fonte-destaque: 'Bebas Neue', sans-serif;
     --fonte-android: 'Android', cursive;
@@ -24,7 +25,7 @@
 }
 
 body {
-    background-color: var(--cor0);
+    background-color: var(--cor-bg);
     font-family: var(--fonte-padrao);
 }
 
@@ -88,10 +89,41 @@ main {
 main h1 {
     color: var(--cor5);
     font-family: var(--fonte-android);
+    font-size: 1.7em;
 }
 
 main h2 {
     font-family: var(--fonte-android);
+    color: var(--cor4);
+    font-size: 1.3em;
+    background-image: linear-gradient(to right, var(--cor0), transparent);
+    text-indent: 8px;
+}
+
+main p {
+    margin: 15px 0px 15px 0px;
+    text-align: justify;
+    text-indent: 30px;
+    line-height: 1.5em;
+}
+
+main strong {
+    color: var(--cor3);
+    font-weight: bold;
+}
+
+main a {
+    text-decoration: none;
+    font-weight: bold;
+    color: var(--cor5);
+    background-color: var(--cor0);
+    padding: 2px 6px;
+    border-radius: 5px;
+}
+
+main a:hover {
+    text-decoration: underline;
+    background-color: var(--cor1);
 }
 
 main img {
@@ -99,7 +131,7 @@ main img {
 }
 
 main img.pequena {
-    width: 50%;
+    max-width: 350px;
     display: block;
     margin: auto;
 }
